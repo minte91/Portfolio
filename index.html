@@ -8,18 +8,23 @@
     <title>My Portfolio</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <a href="#top" class="logo">
-            <span class="logo-badg">MS</span>
+            <span class="logo-badge">MS</span>
             <span class="logo-name">Mintesinot Shara</span>
         </a>
         <nav class="nav">
             <a href="#top"> Home </a>
             <a href="#about"> About </a>
-            <a href="#skill"> Skills </a>
+            <a href="#skills"> Skills </a>
             <a href="#projects"> Project </a>
             <a href="#services"> Services </a>
             <a href="#contact"> Contact </a>
@@ -44,17 +49,146 @@
             </div>
         </section>
 
-        <section id="about"></section>
-        <section id="skill"></section>
-        <section id="projects"></section>
-        <section id="services"></section>
-        <section id="contact"></section>
+        <section id="about">
+            <div class="container">
+                <span class="section-label">About Me</span>
+                <h2>Who is Mintesinot Shara?</h2>
+                <p>[Two or three sentences about your background, what you enjoy building, and what you are looking
+                    for.]
+                </p>
+                <a href="files/Mintesinot-Shara-CV.pdf" class="btn btn-primary" download>Download CV</a>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <span class="section-label">What I Work With</span>
+                <h2>Skills &amp; Tools</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <span class="skill-icon">&lt;/&gt;</span>
+                        <h3 class="frontend">Frontend</h3>
+                        <div class="skills">
+                            <span class="skill-tag">Skill 1</span>
+                            <span class="skill-tag">Skill 2</span>
+                            <span class="skill-tag">Skill 3</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">{ }</span>
+                        <h3 class="backend">Backend</h3>
+                        <div class="skills">
+                            <span class="skill-tag">Skill 1</span>
+                            <span class="skill-tag">Skill 2</span>
+                            <span class="skill-tag">Skill 3</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <span class="skill-icon">&gt;_</span>
+                        <h3 class="tools">Tools</h3>
+                        <div class="skills">
+                            <span class="skill-tag">Skill 1</span>
+                            <span class="skill-tag">Skill 2</span>
+                            <span class="skill-tag">Skill 3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>My Latest Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="images/projects/project-1.jpg" alt="Screenshot of [Project name]" class="project-img">
+                        <h3 class="project-name">[Project name]</h3>
+                        <p>[Short description of the project.]</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/projects/project-2.jpg" alt="Screenshot of [Project name]" class="project-img">
+                        <h3 class="project-name">[Project name]</h3>
+                        <p>[Short description of the project.]</p>
+                    </div>
+                    <div class="project-card">
+                        <img src="images/projects/project-3.jpg" alt="Screenshot of [Project name]" class="project-img">
+                        <h3 class="project-name">[Project name]</h3>
+                        <p>[Short description of the project.]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <span class="section-label">Services</span>
+                <h2>Services I Provide</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <span class="service-icon">01</span>
+                        <h3 class="service-name">Web Development</h3>
+                        <p>[Short description of this service.]</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-icon">02</span>
+                        <h3 class="service-name">Backend &amp; APIs</h3>
+                        <p>[Short description of this service.]</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-icon">03</span>
+                        <h3 class="service-name">App Development</h3>
+                        <p>[Short description of this service.]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <span class="section-label">Contact</span>
+                <h2>Let’s Talk About Your Next Project</h2>
+                <p>[A short line inviting people to reach out.]</p>
+                <div class="links">
+                    <a href="mailto:mintesinotshara@gmail.com">mintesinotshara@gmail.com</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="https://github.com/minte91" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+                <a href="mailto:mintesinotshara@gmail.com" class="btn"></a>
+            </div>
+        </section>
     </main>
 
-    <footer></footer>
-
-
-
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#top" class="logo">
+                    <span class="logo-badge">MS</span>
+                    <span class="logo-name">Mintesinot Shara</span>
+                </a>
+                <p>[One line about what you do.]</p>
+            </div>
+            <nav class="footer-nav">
+                <h3 class="footer-title">Navigation</h3>
+                <a href="#top"> Home </a>
+                <a href="#about"> About </a>
+                <a href="#skills"> Skills </a>
+                <a href="#projects"> Projects </a>
+                <a href="#services"> Services </a>
+                <a href="#contact"> Contact </a>
+            </nav>
+            <div class="footer-contact">
+                <h3 class="footer-title">Contacts</h3>
+                <a href="mailto:mintesinotshara@gmail.com">mintesinotshara@gmail.com</a>
+                <a href="#">LinkedIn</a>
+                <a href="https://github.com/minte91" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 Mintesinot Shara. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 
