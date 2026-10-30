@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #2F4A32;
+    --green-dark: #223826;
+    --yellow: #F5A81C;
+    --cream: #F6F6F1;
+    --tint: #EDEFE4;
+    --text: #1C2A1F;
+    --muted: #4A5A4D;
+    --border: #E3E5DA;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--cream);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: var(--green);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-badge {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    color: var(--text);
+    border-radius: 50%;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.logo-name {
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--cream);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 6px;
+    border-radius: 999px
+}
+
+.nav a {
+    color: var(--cream);
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 999px;
+    transition: background-color 0.2s;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.nav a.active {
+    background-color: var(--yellow);
+    color: var(--text);
+    font-weight: 700;
+}
+
+.header .btn {
+    padding: 10px 20px;
+}
