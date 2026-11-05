@@ -128,11 +128,7 @@ header {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* .nav a.active {
-    background-color: var(--yellow);
-    color: var(--text);
-    font-weight: 700;
-} */
+
 
 header .btn {
     padding: 10px 20px;
@@ -315,7 +311,7 @@ header .btn {
 
 /* ========== Projects ========== */
 .projects {
-    background-color: var(--tint);
+    background-color: var(--cream);
 }
 
 .projects h2 {
@@ -361,3 +357,145 @@ header .btn {
 
 
 /* ========== Services ========== */
+.services {
+    background-color: var(--cream);
+}
+
+.services .section-label,
+.services h2 {
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 24px;
+    transition: transform 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+}
+
+.service-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    color: var(--text);
+    border-radius: 50%;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.service-name {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.service-card p {
+    color: var(--muted);
+    margin-bottom: 0;
+}
+
+
+/* ========== Contact ========== */
+.contact {
+    background-color: var(--cream);
+    color: var(--text);
+}
+
+.contact .container {
+    max-width: 800px;
+}
+
+.contact p {
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 28px;
+    font-weight: 500;
+}
+
+.contact-links a {
+    transition: color 0.2s;
+}
+
+.contact-links a:hover {
+    color: var(--green);
+    text-decoration: underline;
+}
+
+/* ========== Footer ========== */
+.footer {
+    background-color: var(--green-dark);
+    color: #DCE5DB;
+    font-size: 15px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    padding-top: 56px;
+    padding-bottom: 40px;
+}
+
+.footer-brand .logo {
+    margin-bottom: 14px;
+}
+
+.footer-brand p {
+    max-width: 300px;
+}
+
+.footer-nav,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-title {
+    color: var(--yellow);
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.footer-nav a,
+.footer-contact a {
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover,
+.footer-contact a:hover {
+    color: var(--yellow);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-bottom .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
