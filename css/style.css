@@ -534,6 +534,8 @@ header .btn {
     /* Header */
     .header-inner {
         flex-wrap: wrap;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 
     .nav {
@@ -580,6 +582,13 @@ header .btn {
     /* Header */
     .header-inner {
         justify-content: center;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .container {
+        padding-left: 18px;
+        padding-right: 18px;
     }
 
     .logo-name {
@@ -604,10 +613,6 @@ header .btn {
     /* General spacing */
     main section {
         padding: 44px 0;
-    }
-
-    .container {
-        padding: 0 18px;
     }
 
     h2 {
