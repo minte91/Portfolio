@@ -330,6 +330,8 @@ header .btn {
     border-radius: 20px;
     padding: 24px;
     transition: transform 0.2s;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .project-card:hover {
@@ -337,8 +339,10 @@ header .btn {
 }
 
 .project-img {
+    display: block;
     width: 100%;
-    height: 180px;
+    height: auto;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 12px;
     background-color: var(--green);
