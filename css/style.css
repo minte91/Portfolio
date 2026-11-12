@@ -14,7 +14,7 @@
     --tint: #EDEFE4;
     --text: #1C2A1F;
     --muted: #4A5A4D;
-    --border: #E3E5DA;
+    --border:  #E3E5DA;
 }
 
 html {
@@ -71,6 +71,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    padding: 16px 0;
 }
 
 .header-inner {
@@ -78,8 +79,6 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
 }
 
 .logo {
@@ -532,10 +531,13 @@ header .btn {
     }
 
     /* Header */
+
+    header {
+        padding: 12px 0;
+    }
+
     .header-inner {
         flex-wrap: wrap;
-        padding-top: 12px;
-        padding-bottom: 12px;
     }
 
     .nav {
@@ -580,10 +582,21 @@ header .btn {
 @media (max-width: 600px) {
 
     /* Header */
+
+    header {
+        padding: 14px 0;
+        background: red;
+    }
+
+    header .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px 20px;
+    }
+
     .header-inner {
         justify-content: center;
-        padding-top: 14px;
-        padding-bottom: 14px;
     }
 
     .container {
@@ -595,9 +608,6 @@ header .btn {
         font-size: 16px;
     }
 
-    header .btn {
-        display: none;
-    }
 
     .nav {
         width: 100%;
